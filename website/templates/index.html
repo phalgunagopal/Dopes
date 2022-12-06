@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- <link rel="stylesheet" href ="index.css"> -->
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='index.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>{% block title %}DoPES{% endblock %}</title>
+    </head>
+    <body>
+          
+        <div class="container">
+            <div class="nav">
+                <span><i class="fa fa-fithub">
+
+                </i></span><a  id="signup" href="/signup">
+                <button >Sign Up</button>
+            </a>
+            
+            </div>
+            <div class="text">
+                <h1 class="name">DoPES </h1>
+                <h1 class="h1tag">Colloborate with your peers today</h1>
+                <h2>Build a team, build a Resume</h2>
+                <p></p>
+
+
+            </div>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+            {% if category=='error' %}
+            <div class="alert alert-danger alert-dismissable fade show" role="alert">
+                {{message}}
+                <button type="button" class="close" data-dismiss="alert">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div> 
+            {% else %}
+            <div class="alert alert-success alert-dismissable fade show" role="alert">
+                {{message}}
+                <button type="button" class="close" data-dismiss="alert">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% endwith %} 
+            <div class="any">
+                <form method="POST" action="/login">
+                    <div class ="form-group">
+                        <label class="texts" for="email">Email Address</label>
+                        <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Enter Email"
+                        />
+                    </div>
+                    <div class ="form-group">
+                        <label class="texts" for="password">Password</label>
+                        <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        name="password"
+                        placeholder="Enter Password"
+                        />
+                        <br>
+                <button class="submit" type="submit">Sign in</button>
+            </form>
+            </div>
+            <div class="service">
+                <div class="developers">
+                    
+                </div>
+            </div>
+
+        </div>.
+    </body>
+</html>
