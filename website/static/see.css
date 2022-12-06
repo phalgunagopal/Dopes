@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    width: 100%;
+    height: 150vh;
+    background-image: linear-gradient(#38073e,rgb(244, 88, 26));
+    overflow-y: auto;
+
+}
+.welcoming{
+    background-color: black;
+    padding: 75px 300px;
+}
+.welcoming h1{
+    position: absolute;
+    color: aliceblue;
+
+}
+.welcoming h3{
+    color: rgb(101, 100, 100);
+    
+}
+.welcoming p{
+    
+    color: blueviolet;
+    margin-left: 50px;
+}
+.profile{
+    margin-left: 600px;
+    margin-top: 50px;
+}
+button{
+    
+    padding:5px 20px;
+    background-color: greenyellow;
+    color:rgb(63, 2, 70);
+    border:none;
+    border-radius: 5px;
+}
+.gotos{
+    margin: 50px auto;
+    color: aliceblue;
+    
+    
+}
+.choose{
+    margin-left: 500px;
+    padding:55px 75px;
+    background-color: rgb(252, 252, 252);
+    color:rgb(63, 2, 70);
+    border:rgb(0, 0, 0);
+    border-style:dotted;
+    border-width: 5px;
+    border-radius: 45px;
+
+}
+table{
+    margin-right: 200px;
+    border: 3px solid cyan;
+}
+table th{
+color: aliceblue;
+}
+table tr{
+    color: aliceblue;
+}
+.form{
+    color:aliceblue;
+    width: 500px;
+    margin:auto
+}
+.form-group{
+    margin: auto;
+    align-items: center;
+    padding: 10px 15px;
+}
+.form-control2{
+  
+    padding: 50px 500px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.sub{
+    margin-left: 700px;
+}

@@ -1,0 +1,92 @@
+/* *{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#38073e,rgb(244, 88, 26));
+
+}
+.nav{
+    position: relative;
+
+}
+
+
+.span{
+    color: "white";
+}
+.text h1.name{
+    position:absolute;
+    color:rgb(38, 180, 151);
+}
+
+.text p{
+
+} */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#38073e,rgb(244, 88, 26));
+
+}
+.nav{
+    position: relative;
+
+}
+.nav button{
+    position: absolute;
+    margin-left: 90%;
+    
+    background: none;
+    color: rgb(245, 228, 0);
+    padding: 5px 14px;
+    margin-top: 100px;
+}
+.span{
+    color: "white";
+}
+.text h1.name{
+    position:absolute;
+    color:rgb(38, 180, 151);
+}
+.text h1.h1tag{
+    position: absolute;
+    color: rgb(142, 243, 11);
+    margin-top: 70px;
+    margin-left: 30px;
+}
+.text h2{
+    position: absolute;
+    color : rgb(38, 180, 151);
+    margin-top: 120px;
+    margin-left: 45px;
+}
+
+
+.any{
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 50px;   
+}
+input{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border:none;
+
+}
+.any button{
+    padding:5px 20px;
+    background-color: greenyellow;
+    color:rgb(63, 2, 70);
+    border:none;
+    border-radius: 5px;
+}
